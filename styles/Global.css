@@ -25,7 +25,10 @@ html {
 
 body {
   height: 100vh;
+  display: flex;
   background: var(--background);
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 body,
@@ -101,5 +104,5 @@ button.outlined,
 
 .content header img{
   width: 16.7rem;
-  mar
+
 }
