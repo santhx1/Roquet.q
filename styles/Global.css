@@ -19,6 +19,7 @@ html {
   --grey-dark: #4d5e77;
   --grey-blue: #a1b2cd;
   --grey-light: #e5eaf1;
+  --grey-medium:#eaecf2;
 
   font-size: 62.5%; /*1rem = 10px*/
 }
@@ -27,8 +28,7 @@ body {
   height: 100vh;
   display: flex;
   background: var(--background);
-  overflow-x: hidden;
-  overflow-y: hidden;
+  
 }
 
 body,
@@ -83,7 +83,7 @@ button:hover,
   filter: brightness(1.2);
 }
 
-button > img 
+button > img,
 .button > img {
   margin-right: 1rem;
   width: 2rem;
@@ -95,6 +95,19 @@ button.outlined,
     color: var(--blue);
     border: .2rem solid var(--blue);
 
+}
+
+button.red,
+.button.red{
+  background: var(--red);
+  color: var(--white);
+  
+}
+
+button.grey,
+.button.grey{
+  background: var(--grey-light);
+  color: var(--grey-dark);
 }
 
 .content header{

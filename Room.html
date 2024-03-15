@@ -10,7 +10,8 @@
 
   <!-- CSS only -->
   <link rel="stylesheet" href="styles/Global.css">
-  <link rel="stylesheet" href="styles/room.css">
+  <link rel="stylesheet" href="styles/Room.css">
+  <link rel="stylesheet" href="styles/Modal.css">
 
   <!---Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,34 +57,106 @@
             <section id="questions">
               <h2 class="sr-only">Perguntas da Comunidade</h2>
               <div class="questions">
-
-                <div class="question-wrapper">
+                <div class="question-wrapper ">
                   <div class="question-content">
                     <div class="user">
-                      <img src="assets/avatar.svg" alt="Foto do usuário"/>
+                      <img src="assets/user.svg" alt="Foto do usuário"/>
                     </div>
                     <div class="question">
                       <p>Qual a diferença entre const, var e let no JavaScript?</p>
-
                     </div>
                   </div>
                   <div class="actions">
                     <a href="#" class="check">
                       <img src="/assets/check.svg" alt=""> Marcar como lida
                     </a>
+                    <a href="#" class="delete">
+                      <img src="/assets/trash.svg" alt="">Excluir
+                    </a>
+                  </div>
+                </div>
+               </div>
+
+
+               <div class="question-wrapper">
+                  <div class="question-content">
+                    <div class="user">
+                      <img src="assets/user.svg" alt="Foto do usuário"/>
+                    </div>
+                    <div class="question">
+                      <p>O que é typescript?</p>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <a href="#" class="check">
+                      <img src="/assets/check.svg" alt=""> Marcar como lida
+                    </a>
+                    <a href="#" class="delete">
+                      <img src="/assets/trash.svg" alt="">Excluir
+                    </a>
+                  </div>
+                </div>
+
+
+                 <div class="question-wrapper read">
+                  <div class="question-content">
+                    <div class="user">
+                      <img src="assets/user.svg" alt="Foto do usuário"/>
+                    </div>
+                    <div class="question">
+                      <p>Qual a diferença entre const, var e let no JavaScript?</p>
+                    </div>
+                  </div>
+                  <div class="actions">
+                   
 
                     <a href="#" class="delete">
                       <img src="/assets/trash.svg" alt="">Excluir
                     </a>
-
+                  </div>
+                  
+                 </div>
+                 <div class="question-wrapper ">
+                  <div class="question-content">
+                    <div class="user">
+                      <img src="assets/user.svg" alt="Foto do usuário"/>
+                    </div>
+                    <div class="question">
+                      <p>Como você pode aplicar estilos específicos a duas linhas de texto diferentes em um documento HTML usando CSS? Explique como você pode selecionar cada linha individualmente e aplicar propriedades como cor do texto, tamanho da fonte e espaçamento entre linhas.</p>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <a href="#" class="check">
+                      <img src="/assets/check.svg" alt=""> Marcar como lida
+                    </a>
+                    <a href="#" class="delete">
+                      <img src="/assets/trash.svg" alt="">Excluir
+                    </a>
                   </div>
                 </div>
-              </div>
+               </div>
 
-
-            </section>
-
+                </div>
+                  </div>
+               </section>
           </main>
+        
+          <div class="modal-wrapper">
+            <div class="modal">
+              <h2>Excluir Pergunta</h2>
+              <p>Tem certeza que deseja mesmo excluir esta pergunta ?</p>
+
+              <form action="#">
+                <label class="sr-only" for-id="password">Digite sua senha admin</label>
+                <input type="password" id="password" name="password" placeholder="Sua senha" />
+                
+                <div class="buttons">
+                  <div class="button grey">Cancelar</div>
+                  <button class="red">Sim, Excluir</button>
+                </div>
+              </form>
+            </div>
+          </div>
 
   </Body>
 </html>
