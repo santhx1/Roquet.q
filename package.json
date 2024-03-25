@@ -2,15 +2,16 @@
   "name": "rocket.q",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ."
   },
   "keywords": [],
   "author": "Santhiago da C. Lima",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.9",
-    "express": "^4.19.1"
+    "express": "^4.19.1",
+    "nodemon": "^3.1.0"
   }
 }
