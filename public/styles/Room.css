@@ -1,4 +1,4 @@
-@import url(//styles/Global.css);
+@import url(./Global.css);
 
 .content {
   max-width: min(112rem, 90%);
